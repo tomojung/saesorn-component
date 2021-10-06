@@ -10,17 +10,19 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
           registry-url: https://registry.npmjs.org
       - name: Install Dependency
-        run: npm install
+        run: yarn
       - name: Run story build
-        run: npm run build
+        run: yarn run build
       - name: Publish to NPM
-        run: npm publish --access public
+        run: yarn publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
-      - name: publish Storybook
+      - name: Publish to Chromatic
         run: npm run chromatic
