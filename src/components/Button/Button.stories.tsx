@@ -23,3 +23,6 @@ Secondary.args = { ...Primary.args, primary: false, label: "Secondary 😇" };
 
 export const Outline = Template.bind({});
 Outline.args = { ...Primary.args, primary: false, size:"small", label: "Outline" };
+
+export const Test = Template.bind({});
+Test.args = { ...Primary.args, primary: false, size:"small", label: "Test" };
