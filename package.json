@@ -8,7 +8,8 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "chromatic": "npx chromatic --project-token=27d0775c6dcb"
   },
   "repository": {
     "type": "git",

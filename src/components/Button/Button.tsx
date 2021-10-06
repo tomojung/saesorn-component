@@ -42,7 +42,9 @@ export const Button = ({
       style={{ backgroundColor }}
       {...props}
     >
+      <span style={{fontSize : 30}}>
       {label}
+        </span>
     </button>
   );
 };
