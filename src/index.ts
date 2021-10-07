@@ -1,4 +1,10 @@
-import {Button} from "./components/Button/Button";
+import {Button} from "./components/Button";
+import {BaseImageEditor} from "./components/BaseImageEditor";
+import CustomButton from "./components/CustomButton";
 
-export { Button };
 
+export {
+    Button,
+    BaseImageEditor,
+    CustomButton
+};

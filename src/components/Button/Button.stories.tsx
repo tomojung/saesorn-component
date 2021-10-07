@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import { Story } from "@storybook/react";
-import { Button, ButtonProps } from "./Button";
+import { Button, ButtonProps } from "./index";
 
 export default {
   title: "Components/Button",
@@ -20,12 +20,3 @@ Primary.args = { label: "Primary 😃", size: "large" };
 
 export const Secondary = Template.bind({});
 Secondary.args = { ...Primary.args, primary: false, label: "Secondary 😇" };
-
-export const Outline = Template.bind({});
-Outline.args = { ...Primary.args, primary: false, size:"small", label: "Outline" };
-
-export const Test = Template.bind({});
-Test.args = { ...Primary.args, primary: false, size:"small", label: "Test" };
-
-export const Yo = Template.bind({});
-Yo.args = { ...Primary.args, primary: false, size:"small", label: "Yo" };

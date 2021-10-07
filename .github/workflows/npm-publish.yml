@@ -17,12 +17,12 @@ jobs:
           node-version: '14'
           registry-url: https://registry.npmjs.org
       - name: Install Dependency
-        run: npm install
+        run: yarn
       - name: Run story build
-        run: npm run build
+        run: yarn run build
       - name: Publish to NPM
-        run: npm publish --access public
+        run: yarn publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
       - name: Publish to Chromatic
-        run: npm run chromatic
+        run: yarn run chromatic
