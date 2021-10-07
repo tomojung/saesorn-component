@@ -29,6 +29,12 @@
     "@mui/material": "^5.0.2",
     "@toast-ui/react-image-editor": "^3.15.0"
   },
+  "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mui/material": "^5.0.2",
+    "@toast-ui/react-image-editor": "^3.15.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@rollup/plugin-commonjs": "^21.0.0",
