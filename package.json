@@ -1,6 +1,6 @@
 {
   "name": "saesorn-component",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Component for Saesorn CMS",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
